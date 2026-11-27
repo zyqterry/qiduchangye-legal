@@ -3,8 +3,8 @@
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,"PingFang SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif}
 main{max-width:760px;margin:0 auto;padding:24px 16px 64px}h1{font-size:1.5em;line-height:1.4}h2{font-size:1.15em;margin-top:2em;border-top:1px solid var(--line);padding-top:1em}
 a{color:var(--link);word-break:break-all}nav{font-size:.9em;color:var(--muted);margin-bottom:8px}ul.docs{padding-left:1.2em}footer{margin-top:48px;color:var(--muted);font-size:.85em}</style></head><body><main><nav><a href="./">《棋渡长夜》协议与政策</a></nav><h1>《棋渡长夜》隐私政策</h1>
-<p>版本：v3<br />
-生效日期：2026 年 11 月 23 日</p>
+<p>版本：v4<br />
+生效日期：2026 年 11 月 27 日</p>
 <p>开发者：朱煜箐（个人开发者）<br />
 个人信息保护负责人：朱煜箐<br />
 联系邮箱：terryzhu91@gmail.com</p>
@@ -17,7 +17,7 @@ a{color:var(--link);word-break:break-all}nav{font-size:.9em;color:var(--muted);m
 <li><strong>游戏进度</strong>：剧情和教学进度、结算记录、金币和棋盘皮肤、每日残局与挑战记录、成就，用来保存你的进度。正在下的那一盘不保存，退出或被防沉迷结束后需要重新开始。</li>
 <li><strong>设置</strong>：字号、音效、震动等，用来记住你的选择。</li>
 <li><strong>同意记录</strong>：你同意的协议版本和同意时间，用来确认你同意过当前版本。</li>
-<li><strong>登录状态</strong>：TapTap 登录后，游戏只读取 TapTap 返回的账号标识（openId）和认证结果，用来判断能否进入游戏。游戏不读取、不保存你的姓名、身份证号码或证件照片。</li>
+<li><strong>登录状态</strong>：TapTap 登录后，游戏只读取 TapTap 返回的账号标识（openId）和认证结果，用来判断能否进入游戏。游戏不读取、不保存你的姓名、身份证号码、证件照片，也拿不到你登录 TapTap 时填写的手机号码和短信验证码。</li>
 <li><strong>蓝牙对战数据</strong>：只在你主动点“建房”或“加入”后处理，包括用于搜房和连接的临时蓝牙标识。建房后，附近设备搜房时可以看到临时房号。加入房间后，双方点“确认码一致”前，两台手机会通过蓝牙交换握手信息，房主的手机先发出确认码和断线恢复凭据。双方确认后才交换棋步及悔棋、和棋、认输请求。连接状态、确认码和断线恢复凭据只保存在内存中，单局结束后等待再来一局时仍会保留，离开蓝牙房间、关闭会话或连接超时后清除。上述蓝牙数据不经过服务器、不上传互联网。</li>
 </ol>
 <p>游戏不收集通讯录、定位、相册、麦克风、摄像头、支付信息或广告标识。蓝牙对战不读取、不推断你的位置。</p>
@@ -27,13 +27,14 @@ a{color:var(--link);word-break:break-all}nav{font-size:.9em;color:var(--muted);m
 <li><strong>名称</strong>：TapSDK 4.11.0（基础、登录、合规认证模块；安装包内附带更新模块，但当前版本不调用它）</li>
 <li><strong>提供方</strong>：易玩（上海）网络科技有限公司</li>
 <li><strong>用途</strong>：TapTap 登录、实名认证和防沉迷</li>
-<li><strong>可能处理的信息</strong>：TapTap 账号标识（openId，用于实名和防沉迷检查）；系统版本、设备型号、设备 CPU 信息、设备内存信息、网络类型、Android ID</li>
+<li><strong>可能处理的信息</strong>：TapTap 账号标识（openId，用于实名和防沉迷检查）；手机号码和短信验证码（仅在你选择用手机号登录 TapTap 时，由你在 TapTap 登录页填写）；系统版本、设备型号、设备 CPU 信息、设备内存信息、网络类型、Android ID</li>
 <li><strong>为什么需要</strong>：保证设备兼容、排查和修复故障</li>
 <li>
 <p><strong>TapSDK 隐私政策</strong>：https://developer.taptap.cn/docs/sdk/start/agreement/</p>
 </li>
 <li>
-<p>你同意本政策之后，游戏才会初始化 TapSDK 的登录和合规认证功能。游戏不调用更新模块，不检查新版本。</p>
+<p>你同意本政策之后，游戏才会初始化 TapSDK 的登录和合规认证功能，上面列出的设备信息（含 Android ID）也是在初始化之后才由 TapSDK 处理。你点“不同意”或还没同意时，游戏不会初始化 TapSDK。游戏不调用更新模块，不检查新版本。</p>
+<p><strong>手机号登录</strong>：如果你选择用手机号登录 TapTap，易玩（上海）网络科技有限公司会在 TapTap 登录页收集你主动填写的手机号码，用来发送短信验证码并完成登录。手机号码和验证码由 TapTap 按《TapTap 隐私政策》（<a href="https://www.taptap.cn/doc/privacy-policy/">https://www.taptap.cn/doc/privacy-policy/</a>）处理，游戏拿不到。</p>
 </li>
 <li>登录只申请基础信息（basic_info）权限，不申请昵称、头像、邮箱或好友权限。</li>
 <li>实名信息在 TapTap 的页面里填写和核验，由 TapTap 按它的隐私政策处理，游戏拿不到这些原始信息。</li>
